@@ -20,20 +20,18 @@
 # In[1]:
 
 
-get_ipython().system('pip install scikit-learn==1.1.3 -q')
-get_ipython().system('pip install matplotlib==3.5.2 -q')
+
 
 
 # In[2]:
 
 
-get_ipython().system('pip install phik -q')
+
 
 
 # In[3]:
 
 
-get_ipython().system('pip install shap -q')
 
 
 # In[4]:
@@ -438,7 +436,7 @@ param_grid=[
     {'models':[SVC(
         kernel='poly',
         random_state=RANDOM_STATE,
-        degree=3
+        degree=2
     )],
     'preprocessor__num':[StandardScaler(),MinMaxScaler(),RobustScaler(),'passthrough']   
     }
