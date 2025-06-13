@@ -420,7 +420,7 @@ param_grid=[
     },
     
     {'models': [KNeighborsClassifier()],
-     'models__n_neighbors': range(2,5),
+     'models__n_neighbors': range(2,7),
      'preprocessor__num':[StandardScaler(),MinMaxScaler(),RobustScaler(),'passthrough']
     },
     
